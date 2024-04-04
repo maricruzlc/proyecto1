@@ -1,16 +1,32 @@
 <html xmlns="http://www.w3.org/1999/xhtml"     
-    xmlns:th="http://www.thymeleaf.org">
-          
+      xmlns:th="http://www.thymeleaf.org">
+
     <head th:replace="~{layout/plantilla::head}">
- 
+
         <title>PIELEX</title>
         
+        <style>
+            /*para que las imagenes esten en fila */
+            .fila {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        </style>
+
     </head>
-    
+
     <body>
-        <header th:replace="~{layout/plantilla::header}"/>
-        
-         <footer th:replace="~{layout/plantilla::footer}"/>  
+        <header th:replace="~{layout/plantilla::header}"/> 
+
+        <div class="fila">
+            <!-- Atacama everest imagen -->
+            <img src="https://static.wixstatic.com/media/8bf744_177a9f511de34f4d83099f4e2c7be60c~mv2.png/v1/fit/w_500,h_500,q_90/file.png" alt="ATACAMA EVEREST" width="250" height="300" class="imagen"/>
+
+            <!-- LUNA CAFÉ -->
+            <img src="https://static.wixstatic.com/media/8bf744_9a5a20cd6c26482eba98c3af82470adc~mv2.jpg/v1/fill/w_240,h_240,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/8bf744_9a5a20cd6c26482eba98c3af82470adc~mv2.jpg" alt="LUNA CAFÉ" width="250" height="300" class="imagen" />
+        </div>
+        <footer th:replace="~{layout/plantilla::footer}"/>  
     </body> 
 </html> 
-   
+

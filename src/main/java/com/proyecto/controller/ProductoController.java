@@ -34,9 +34,6 @@ public class ProductoController {
         model.addAttribute("productos", productos);
         model.addAttribute("totalProductos", productos.size());
         model.addAttribute("categorias", categorias);
-        
-        
-        
         return "/producto/listado";
     }
    
