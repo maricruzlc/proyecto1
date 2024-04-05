@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+    <head th:replace="~{layout/plantilla :: head}">
+        <title>PIELEX</title>
+    </head>
+    <body>
+        <section th:fragment="info" class="py-4 mb-4 bg-light">
+            <article>
+                <h2>Sobre Nosotros</h2>
+                <p>PIELEX es una tienda de zapatos en linea especializada en vender productos elaborados con cuero.</p>
+            </article>
+
+            <article>
+                <h2>Horario de Atención</h2>
+                <ul>
+                    <li><strong>Lunes a Sábado</strong> 9:00am - 5:00pm</li>
+                </ul>
+            </article>
+
+            <article>
+                <h2>Contáctenos</h2>
+                <ul>
+                    <li><strong>Teléfono:</strong> (+506) 7151-3990</li>
+                    <li><strong>Correo:</strong> ventas@pielexsa.com</li>
+                    <li><strong>Redes Sociales:</strong>
+                        <a href="https://www.facebook.com">
+                            <img src="https://cdn2.downdetector.com/static/uploads/logo/FB-f-Logo__blue_512.png" alt="facebook" height="50"/>
+                        </a>
+                        <a href="https://www.instagram.com">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="instagram" height="50"/>
+                        </a>
+                    </li>
+                </ul>
+            </article>
+
+            <article>
+                <h2>Chat Directo</h2>
+                <form>
+                    <input type="text" name="nombre" value="NOMBRE" size="24" />
+                    <input type="text" name="correo" value="CORREO ELECTRÓNICO" size="24" />
+                    <input type="text" name="mensaje" value="MENSAJE" />
+                    <input type="submit" value="Enviar" name="Enviar" />
+                </form>
+            </article>
+        </section>
+    </body>
+</html>
